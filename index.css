@@ -1,0 +1,130 @@
+:root {
+  --soft-violet: hsl(277, 64%, 61%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b0d1c;
+}
+
+main {
+  margin-top: 2rem;
+  color: white;
+  overflow: hidden;
+  min-height: 10rem;
+  max-width: 21rem;
+  border-radius: 5px;
+  background-color: #1c1938;
+}
+
+header {
+  filter: hue-rotate(4deg);
+  min-height: 18rem;
+  filter: brightness(38%) sepia(9%) saturate(5000%) hue-rotate(238deg);
+}
+
+img {
+  display: block;
+  height: 17rem;
+}
+
+article {
+  padding: 1rem 2rem 2rem 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  text-align: center;
+}
+
+h1 {
+  padding-bottom: 1.5rem;
+  display: block;
+}
+
+p {
+  font-size: 1rem;
+  color: grey;
+  padding-bottom: 1.5rem;
+}
+
+.highlight {
+  color: var(--soft-violet);
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.stats span {
+  font-size: small;
+  letter-spacing: 1px;
+  font-family: "Lexend Deca";
+  color: grey;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(https://fonts.google.com/specimen/Inter.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url(https://fonts.google.com/specimen/Lexend+Deca);
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    height: 45rem;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  img {
+    object-fit: contain;
+    height: 23rem;
+  }
+
+  article {
+    padding: 3rem;
+    text-align: left;
+    max-width: 25rem;
+  }
+
+  p {
+    line-height: 19px;
+    font-size: small;
+    padding-bottom: 4rem;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
